@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitai S.D, AI/ML expert-projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="matrix-canvas"></canvas>
+    <canvas id="spider-canvas"></canvas>
+
+    <nav class="nav-container">
+        <div class="nav-brand">
+            <span class="glitch" data-text="Nitai.Web">&lt;Nitai.Web/&gt;</span>
+        </div>
+        <div class="nav-menu" id="navMenu">
+            <a href="index.html" class="nav-link">
+                <span class="nav-icon">⌘</span> HOME
+            </a>
+            <a href="skills.html" class="nav-link">
+                <span class="nav-icon">◈</span> SKILLS
+            </a>
+            <a href="projects.html" class="nav-link active">
+                <span class="nav-icon">⬢</span> PROJECTS
+            </a>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="page-header">
+            <h1 class="page-title glitch" data-text="MY PROJECTS">MY PROJECTS</h1>
+            <p class="page-subtitle">
+                <span class="tag">&lt;</span>
+                Innovative Solutions & Digital Creations
+                <span class="tag">/&gt;</span>
+            </p>
+            <div class="header-decoration">
+                <div class="deco-line"></div>
+            </div>
+        </section>
+
+        <section class="filter-section">
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">
+                    <span class="filter-icon">⬢</span> ALL
+                </button>
+                <button class="filter-btn" data-filter="ai">
+                    <span class="filter-icon">🤖</span> AI/ML
+                </button>
+                <button class="filter-btn" data-filter="security">
+                    <span class="filter-icon">🔐</span> SECURITY
+                </button>
+                <button class="filter-btn" data-filter="web">
+                    <span class="filter-icon">🌐</span> WEB
+                </button>
+                <button class="filter-btn" data-filter="3d">
+                    <span class="filter-icon">🎨</span> 3D
+                </button>
+            </div>
+        </section>
+
+        <section class="projects-section">
+            <div class="projects-grid">
+                <div class="project-card" data-category="ai">
+                    <div class="project-number">01</div>
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon"><img src="imgicon/AI.png"></div>
+                        <span class="project-badge">AI/ML</span>
+                    </div>
+                    <h3 class="project-title">Neural Vision System</h3>
+                    <p class="project-description">
+                        Advanced computer vision system using deep learning for real-time object
+                        detection and tracking. Achieved 98% accuracy with custom CNN architecture.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">TensorFlow</span>
+                        <span class="tech-badge">OpenCV</span>
+                        <span class="tech-badge">YOLO</span>
+                    </div>
+                    <div class="project-stats">
+                        <div class="stat">
+                            <span class="stat-label">Accuracy</span>
+                            <span class="stat-value">98%</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Speed</span>
+                            <span class="stat-value">60 FPS</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="#" class="project-link">
+                            <span>View Project</span>
+                            <span class="link-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="security">
+                    <div class="project-number">02</div>
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon"><img src="imgicon/cyb.png"></div>
+                        <span class="project-badge">Security</span>
+                    </div>
+                    <h3 class="project-title">SecureNet Scanner</h3>
+                    <p class="project-description">
+                        Automated network vulnerability scanner with AI-powered threat detection.
+                        Identifies security flaws and provides remediation recommendations.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Nmap</span>
+                        <span class="tech-badge">Metasploit</span>
+                        <span class="tech-badge">ML</span>
+                    </div>
+                    <div class="project-stats">
+                        <div class="stat">
+                            <span class="stat-label">Vulnerabilities</span>
+                            <span class="stat-value">500+</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Detection</span>
+                            <span class="stat-value">95%</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="#" class="project-link">
+                            <span>View Project</span>
+                            <span class="link-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ai">
+                    <div class="project-number">03</div>
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon"><img src="imgicon/chatbot.png"></div>
+                        <span class="project-badge">AI/ML</span>
+                    </div>
+                    <h3 class="project-title">AI Chatbot Platform</h3>
+                    <p class="project-description">
+                        Intelligent conversational AI powered by transformer models. Features
+                        context awareness, sentiment analysis, and multi-language support.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">PyTorch</span>
+                        <span class="tech-badge">NLP</span>
+                        <span class="tech-badge">FastAPI</span>
+                    </div>
+                    <div class="project-stats">
+                        <div class="stat">
+                            <span class="stat-label">Languages</span>
+                            <span class="stat-value">15+</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Response</span>
+                            <span class="stat-value">&lt;100ms</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="#" class="project-link">
+                            <span>View Project</span>
+                            <span class="link-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-number">04</div>
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon"><img src="imgicon/cloud.png"></div>
+                        <span class="project-badge">Web Dev</span>
+                    </div>
+                    <h3 class="project-title">Cloud Dashboard Pro</h3>
+                    <p class="project-description">
+                        Real-time analytics dashboard for cloud infrastructure monitoring.
+                        Features interactive visualizations and predictive alerts.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">D3.js</span>
+                        <span class="tech-badge">WebSocket</span>
+                    </div>
+                    <div class="project-stats">
+                        <div class="stat">
+                            <span class="stat-label">Users</span>
+                            <span class="stat-value">10K+</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Uptime</span>
+                            <span class="stat-value">99.9%</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="#" class="project-link">
+                            <span>View Project</span>
+                            <span class="link-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="security">
+                    <div class="project-number">05</div>
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon"><img src="imgicon/bu.png"></div>
+                        <span class="project-badge">Security</span>
+                    </div>
+                    <h3 class="project-title">Malware Detector</h3>
+                    <p class="project-description">
+                        Security analizer for computer. Real time malware and spyware detector
+                         with C++ and encryption.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span class="tech-badge">C++</span>
+                        <span class="tech-badge">Binary Encrypt</span>
+                        <span class="tech-badge">Python</span>
+                    </div>
+                    <div class="project-stats">
+                        <div class="stat">
+                            <span class="stat-label">Encryption</span>
+                            <span class="stat-value">AES-256</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Speed</span>
+                            <span class="stat-value">1GB/s</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="#" class="project-link">
+                            <span>View Project</span>
+                            <span class="link-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="3d">
+                    <div class="project-number">06</div>
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon"><img src="imgicon/vr.png"></div>
+                        <span class="project-badge">3D Design</span>
+                    </div>
+                    <h3 class="project-title">Virtual Reality Showroom</h3>
+                    <p class="project-description">
+                        Immersive VR experience for product visualization. Built with WebXR
+                        for cross-platform compatibility and realistic rendering.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span class="tech-badge">Three.js</span>
+                        <span class="tech-badge">WebXR</span>
+                        <span class="tech-badge">Blender</span>
+                        <span class="tech-badge">GLSL</span>
+                    </div>
+                    <div class="project-stats">
+                        <div class="stat">
+                            <span class="stat-label">Models</span>
+                            <span class="stat-value">200+</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">FPS</span>
+                            <span class="stat-value">90</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="#" class="project-link">
+                            <span>View Project</span>
+                            <span class="link-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ai">
+                    <div class="project-number">07</div>
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon"><img src="imgicon/Artif.png"></div>
+                        <span class="project-badge">AI/ML</span>
+                    </div>
+                    <h3 class="project-title">Predictive Analytics Engine</h3>
+                    <p class="project-description">
+                        Machine learning system for time-series forecasting and anomaly detection.
+                        Used in finance, healthcare, and logistics sectors.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Scikit-learn</span>
+                        <span class="tech-badge">LSTM</span>
+                        <span class="tech-badge">Pandas</span>
+                    </div>
+                    <div class="project-stats">
+                        <div class="stat">
+                            <span class="stat-label">Accuracy</span>
+                            <span class="stat-value">96%</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Data Points</span>
+                            <span class="stat-value">1M+</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="#" class="project-link">
+                            <span>View Project</span>
+                            <span class="link-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-number">08</div>
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <img src="imgicon/db.png">
+                        </div>
+                        <span class="project-badge">Web Dev</span>
+                    </div>
+                    <h3 class="project-title">Lightning Fast CMS</h3>
+                    <p class="project-description">
+                        High-performance content management system with headless architecture.
+                        Features real-time collaboration and AI-powered content suggestions.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span class="tech-badge">Next.js</span>
+                        <span class="tech-badge">GraphQL</span>
+                        <span class="tech-badge">MongoDB</span>
+                        <span class="tech-badge">Redis</span>
+                    </div>
+                    <div class="project-stats">
+                        <div class="stat">
+                            <span class="stat-label">Load Time</span>
+                            <span class="stat-value">&lt;1s</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">SEO Score</span>
+                            <span class="stat-value">100</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="#" class="project-link">
+                            <span>View Project</span>
+                            <span class="link-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ai">
+                    <div class="project-number">09</div>
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon"><img src="imgicon/bajrang_chatbot.png"></div>
+                        <span class="project-badge">AI/ML</span>
+                    </div>
+                    <h3 class="project-title">AI Bajrang Chatbot</h3>
+                    <p class="project-description">
+                        Neural network-based Chatbot. Gpt-3 level in limited source.
+                        LLMs model. 150 parameters.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">PyTorch</span>
+                        <span class="tech-badge">MIDI</span>
+                        <span class="tech-badge">RNN</span>
+                    </div>
+                    <div class="project-stats">
+                        <div class="stat">
+                            <span class="stat-label">Genres</span>
+                            <span class="stat-value">20+</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Tracks</span>
+                            <span class="stat-value">5K+</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="#" class="project-link">
+                            <span>View Project</span>
+                            <span class="link-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Collaborate?</h2>
+                <p class="cta-description">
+                    Let's build something extraordinary together.
+                    Reach out for innovative solutions and cutting-edge development.
+                </p>
+                <div class="cta-buttons">
+                    <a href="https://github.com/NitaiSuthar-BajrangDev" target="_blank" class="cta-btn primary">
+                        <span>View GitHub</span>
+                        <span class="btn-icon">→</span>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61569230514336" target="_blank" class="cta-btn secondary">
+                        <span>Contact On Facebook</span>
+                        <span class="btn-icon">◈</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://github.com/NitaiSuthar-BajrangDev" target="_blank" class="social-link" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61569230514336" target="_blank" class="social-link" aria-label="Facebook">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                    </svg>
+                </a>
+            </div>
+            <div class="footer-text">
+                <p>&lt;/&gt; Crafted with precision by <span class="highlight">Nitai</span></p>
+                <p class="footer-subtitle">© 2026 • All right reserved</p>
+            </div>
+        </div>
+        <div class="footer-decoration">
+            <div class="decoration-line"></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
