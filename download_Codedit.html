@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>CODEDIT Download</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0b1220;
+  color: #00e5ff;
+}
+
+/* background glow */
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(0,229,255,0.08), transparent 45%),
+              radial-gradient(circle at bottom right, rgba(0,229,255,0.05), transparent 50%);
+  pointer-events: none;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  z-index: 1;
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 34px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  color: rgba(0, 229, 255, 0.7);
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.btn {
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+  color: #00e5ff;
+  min-width: 220px;
+  text-align: center;
+  border: 1px solid rgba(0, 229, 255, 0.25);
+  background: rgba(0, 229, 255, 0.08);
+}
+
+.btn:hover {
+  background: rgba(0, 229, 255, 0.15);
+}
+
+.small {
+  margin-top: 20px;
+  font-size: 12px;
+  color: rgba(0, 229, 255, 0.5);
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>CODEDIT</h1>
+
+  <p>
+    Lightweight HTML, CSS & JavaScript editor.<br/>
+    Simple, fast and beginner friendly.
+  </p>
+
+  <div class="buttons">
+    <a id="downloadBtn" class="btn" href="#" download>
+      Download for Windows (.exe)
+    </a>
+
+    <button id="copyBtn" class="btn">
+      Copy Download Link
+    </button>
+  </div>
+
+  <div class="small">
+    Version 1.0.8 • Windows Only
+  </div>
+</div>
+
+<script>
+const DOWNLOAD_LINK = "https://drive.google.com/file/d/1n4lQ5f8CDfXAD0VNZ3t-AB82q2CPw6im/view?usp=drive_link";
+
+const downloadBtn = document.getElementById("downloadBtn");
+downloadBtn.href = DOWNLOAD_LINK;
+
+document.getElementById("copyBtn").addEventListener("click", async () => {
+  try {
+    await navigator.clipboard.writeText(DOWNLOAD_LINK);
+    alert("Download link copied!");
+  } catch (err) {
+    // fallback for older browsers
+    const tempInput = document.createElement("input");
+    document.body.appendChild(tempInput);
+    tempInput.value = DOWNLOAD_LINK;
+    tempInput.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempInput);
+
+    alert("Download link copied (fallback mode)!");
+  }
+});
+</script>
+
+</body>
+</html>
