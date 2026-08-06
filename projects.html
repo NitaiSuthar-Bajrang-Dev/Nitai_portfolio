@@ -9,23 +9,12 @@
 </head>
 
 <body>
-    <canvas id="matrix-canvas"></canvas>
-    <canvas id="spider-canvas"></canvas>
-
     <nav class="nav-container">
-        <div class="nav-brand">
-            <span class="glitch" data-text="Rudram.Dev">&lt;Rudram.Dev/&gt;</span>
-        </div>
+        <div class="nav-brand">Nitai&nbsp;S.D</div>
         <div class="nav-menu" id="navMenu">
-            <a href="index.html" class="nav-link">
-                <span class="nav-icon">⌘</span> HOME
-            </a>
-            <a href="skills.html" class="nav-link">
-                <span class="nav-icon">◈</span> SKILLS
-            </a>
-            <a href="projects.html" class="nav-link active">
-                <span class="nav-icon">⬢</span> PROJECTS
-            </a>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="skills.html" class="nav-link">Skills</a>
+            <a href="projects.html" class="nav-link active">Projects</a>
         </div>
         <div class="nav-toggle" id="navToggle">
             <span></span>
@@ -36,12 +25,8 @@
 
     <div class="container">
         <section class="page-header">
-            <h1 class="page-title glitch" data-text="MY PROJECTS">MY PROJECTS</h1>
-            <p class="page-subtitle">
-                <span class="tag">&lt;</span>
-                Innovative Solutions & Digital Creations
-                <span class="tag">/&gt;</span>
-            </p>
+            <h1 class="page-title">My Projects</h1>
+            <p class="page-subtitle">Innovative Solutions &amp; Digital Creations</p>
             <div class="header-decoration">
                 <div class="deco-line"></div>
             </div>
@@ -51,6 +36,12 @@
             <div class="filter-container">
                 <button class="filter-btn active" data-filter="all">
                     <span class="filter-icon">⬢</span> ALL
+                </button>
+                <button class="filter-btn" data-filter="completed">
+                    <span class="filter-icon">✅</span> COMPLETED
+                </button>
+                <button class="filter-btn" data-filter="upcoming">
+                    <span class="filter-icon">🚧</span> UPCOMING
                 </button>
                 <button class="filter-btn" data-filter="ai">
                     <span class="filter-icon">🤖</span> AI/ML
@@ -64,17 +55,99 @@
                 <button class="filter-btn" data-filter="3d">
                     <span class="filter-icon">🎨</span> 3D
                 </button>
+                <button class="filter-btn" data-filter="game">
+                    <span class="filter-icon">♟️</span> GAME
+                </button>
             </div>
         </section>
 
         <section class="projects-section">
             <div class="projects-grid">
-                <div class="project-card" data-category="ai">
-                    <div class="project-number">01</div>
+                <div class="project-card" data-category="web" data-status="completed">
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon">🖥️</div>
+                        <div class="badge-group">
+                            <span class="project-badge">Web Dev</span>
+                            <span class="status-pill completed">Completed</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">CODEDIT</h3>
+                    <p class="project-description">
+                        A lightweight, beginner-friendly code editor for HTML, CSS, and
+                        JavaScript with an instant live preview, so changes show up as you type.
+                        Built as a fast, no-fuss alternative to heavier IDEs.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span class="tech-badge">HTML</span>
+                        <span class="tech-badge">CSS</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">Desktop App</span>
+                    </div>
+                    <div class="project-stats">
+                        <div class="stat">
+                            <span class="stat-label">Live Preview</span>
+                            <span class="stat-value">Real-time</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Platform</span>
+                            <span class="stat-value">Windows</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="download_Codedit.html" class="project-link">
+                            <span>Download &amp; Try</span>
+                            <span class="link-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="game" data-status="completed">
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon">♟️</div>
+                        <div class="badge-group">
+                            <span class="project-badge">Game</span>
+                            <span class="status-pill completed">Completed</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">3PawnGame</h3>
+                    <p class="project-description">
+                        A turn-based strategy board game where each player commands 6 pawns,
+                        maneuvering across the board to out-think and outplay the opponent.
+                        Simple rules, deep tactical decisions.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span class="tech-badge">Board Game</span>
+                        <span class="tech-badge">Strategy</span>
+                        <span class="tech-badge">Turn-Based</span>
+                    </div>
+                    <div class="project-stats">
+                        <div class="stat">
+                            <span class="stat-label">Pawns</span>
+                            <span class="stat-value">6 / player</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Players</span>
+                            <span class="stat-value">2</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/NitaiSuthar-Bajrang-Dev" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <span>View on GitHub</span>
+                            <span class="link-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ai" data-status="upcoming">
                     <div class="project-glow"></div>
                     <div class="project-header">
                         <div class="project-icon"><img src="imgicon/AI.png" alt="a AI/Robot icon"></div>
-                        <span class="project-badge">AI/ML</span>
+                        <div class="badge-group">
+                            <span class="project-badge">AI/ML</span>
+                            <span class="status-pill upcoming">Upcoming</span>
+                        </div>
                     </div>
                     <h3 class="project-title">Neural Vision System</h3>
                     <p class="project-description">
@@ -105,12 +178,14 @@
                     </div>
                 </div>
 
-                <div class="project-card" data-category="security">
-                    <div class="project-number">02</div>
+                <div class="project-card" data-category="security" data-status="upcoming">
                     <div class="project-glow"></div>
                     <div class="project-header">
                         <div class="project-icon"><img src="imgicon/cyb.png" alt="security"></div>
-                        <span class="project-badge">Security</span>
+                        <div class="badge-group">
+                            <span class="project-badge">Security</span>
+                            <span class="status-pill upcoming">Upcoming</span>
+                        </div>
                     </div>
                     <h3 class="project-title">SecureNet Scanner</h3>
                     <p class="project-description">
@@ -141,12 +216,14 @@
                     </div>
                 </div>
 
-                <div class="project-card" data-category="ai">
-                    <div class="project-number">03</div>
+                <div class="project-card" data-category="ai" data-status="upcoming">
                     <div class="project-glow"></div>
                     <div class="project-header">
                         <div class="project-icon"><img src="imgicon/chatbot.png" alt="chatbot icon"></div>
-                        <span class="project-badge">AI/ML</span>
+                        <div class="badge-group">
+                            <span class="project-badge">AI/ML</span>
+                            <span class="status-pill upcoming">Upcoming</span>
+                        </div>
                     </div>
                     <h3 class="project-title">AI Chatbot Platform</h3>
                     <p class="project-description">
@@ -177,12 +254,14 @@
                     </div>
                 </div>
 
-                <div class="project-card" data-category="web">
-                    <div class="project-number">04</div>
+                <div class="project-card" data-category="web" data-status="upcoming">
                     <div class="project-glow"></div>
                     <div class="project-header">
                         <div class="project-icon"><img src="imgicon/cloud.png" alt="cloud"></div>
-                        <span class="project-badge">Web Dev</span>
+                        <div class="badge-group">
+                            <span class="project-badge">Web Dev</span>
+                            <span class="status-pill upcoming">Upcoming</span>
+                        </div>
                     </div>
                     <h3 class="project-title">Cloud Dashboard Pro</h3>
                     <p class="project-description">
@@ -213,12 +292,14 @@
                     </div>
                 </div>
 
-                <div class="project-card" data-category="security">
-                    <div class="project-number">05</div>
+                <div class="project-card" data-category="security" data-status="upcoming">
                     <div class="project-glow"></div>
                     <div class="project-header">
                         <div class="project-icon"><img src="imgicon/bu.png" alt="bug search"></div>
-                        <span class="project-badge">Security</span>
+                        <div class="badge-group">
+                            <span class="project-badge">Security</span>
+                            <span class="status-pill upcoming">Upcoming</span>
+                        </div>
                     </div>
                     <h3 class="project-title">Malware Detector</h3>
                     <p class="project-description">
@@ -248,12 +329,14 @@
                     </div>
                 </div>
 
-                <div class="project-card" data-category="3d">
-                    <div class="project-number">06</div>
+                <div class="project-card" data-category="3d" data-status="upcoming">
                     <div class="project-glow"></div>
                     <div class="project-header">
                         <div class="project-icon"><img src="imgicon/vr.png" alt="Virtual reality"></div>
-                        <span class="project-badge">3D Design</span>
+                        <div class="badge-group">
+                            <span class="project-badge">3D Design</span>
+                            <span class="status-pill upcoming">Upcoming</span>
+                        </div>
                     </div>
                     <h3 class="project-title">Virtual Reality Showroom</h3>
                     <p class="project-description">
@@ -284,12 +367,14 @@
                     </div>
                 </div>
 
-                <div class="project-card" data-category="ai">
-                    <div class="project-number">07</div>
+                <div class="project-card" data-category="ai" data-status="upcoming">
                     <div class="project-glow"></div>
                     <div class="project-header">
                         <div class="project-icon"><img src="imgicon/Artif.png" alt="generative icon"></div>
-                        <span class="project-badge">AI/ML</span>
+                        <div class="badge-group">
+                            <span class="project-badge">AI/ML</span>
+                            <span class="status-pill upcoming">Upcoming</span>
+                        </div>
                     </div>
                     <h3 class="project-title">Predictive Analytics Engine</h3>
                     <p class="project-description">
@@ -320,14 +405,16 @@
                     </div>
                 </div>
 
-                <div class="project-card" data-category="web">
-                    <div class="project-number">08</div>
+                <div class="project-card" data-category="web" data-status="upcoming">
                     <div class="project-glow"></div>
                     <div class="project-header">
                         <div class="project-icon">
                             <img src="imgicon/db.png" alt="database">
                         </div>
-                        <span class="project-badge">Web Dev</span>
+                        <div class="badge-group">
+                            <span class="project-badge">Web Dev</span>
+                            <span class="status-pill upcoming">Upcoming</span>
+                        </div>
                     </div>
                     <h3 class="project-title">Lightning Fast CMS</h3>
                     <p class="project-description">
@@ -358,12 +445,14 @@
                     </div>
                 </div>
 
-                <div class="project-card" data-category="ai">
-                    <div class="project-number">09</div>
+                <div class="project-card" data-category="ai" data-status="upcoming">
                     <div class="project-glow"></div>
                     <div class="project-header">
                         <div class="project-icon"><img src="imgicon/bajrang_chatbot.png" alt="bot"></div>
-                        <span class="project-badge">AI/ML</span>
+                        <div class="badge-group">
+                            <span class="project-badge">AI/ML</span>
+                            <span class="status-pill upcoming">Upcoming</span>
+                        </div>
                     </div>
                     <h3 class="project-title">AI Bajrang Chatbot</h3>
                     <p class="project-description">
